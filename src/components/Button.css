@@ -1,0 +1,10 @@
+.number {
+    margin: 3px;
+    padding: 5px; 
+}
+
+button {
+    font-size: 36px;
+    height: 80px;
+    width: 100px;
+}
