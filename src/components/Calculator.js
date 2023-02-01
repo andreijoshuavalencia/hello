@@ -28,9 +28,12 @@ function Calculator() {
     } else if (!currentNum && num1 != null) {
       setDisplayValue(displayValue.concat(event.target.innerHTML));
       setNum2(displayValue.concat(event.target.innerHTML));
-      setCurrentNum(true);
     }
   };
+
+  console.log('num1 is '+ num1);
+  console.log('num2 is ' + num2);
+  console.log('operation is ' + operation);
 
   const equalHandler = () => {
     let value1 = parseInt(num1);
@@ -54,6 +57,7 @@ function Calculator() {
   // trigger when clearing the calc
   const clearAll = () => {
     setDisplayValue("");
+    setCurrentNum(true);
   };
   return (
     <div className="calculator-container">
